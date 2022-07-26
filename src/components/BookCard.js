@@ -1,17 +1,10 @@
 import React from "react";
 import { Pressable, Image, StyleSheet } from 'react-native';
-import { useNavigation } from '@react-navigation/native';
 
 function BookCard (props) {
-  const navigation = useNavigation();
   return (
     <Pressable
-      onPress={() => {
-        navigation.navigate('Book', {
-          bookTitle: props.bookInfo.title
-        });
-      }}
-
+      onPress={props.onPress}
       style={styles.card}
     >
       <Image
