@@ -53,7 +53,7 @@ export const generatePages = (file) => {
     }
     
     // Slice and Push per page
-    pages.push(file.slice((page * charLimit), page * charLimit + charLimit + 1))
+    pages.push(file.slice((page * charLimit), page * charLimit + charLimit))
     page++;
   }
 

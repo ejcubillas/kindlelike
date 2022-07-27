@@ -27,7 +27,7 @@ function BookScreen(props) {
         {
           props.route.params.bookInfo.pages.map((val, i) => {
             return (
-              <View key={i} style={{ width: pageWidth, height: '100%', padding: 20}}>
+              <View key={i} style={{ width: pageWidth, padding: 20}}>
                 <View style={{ marginBottom: 20 }}>
                   <Text style={{ fontSize: 20 }}>Page {i+1}</Text>
                 </View>
